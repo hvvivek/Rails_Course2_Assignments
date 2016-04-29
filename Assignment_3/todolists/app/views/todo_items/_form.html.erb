@@ -21,12 +21,14 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
+  <% unless @todo_item.id == nil %>
   <div class="field">
     <%= f.label :completed %><br>
     <%= f.check_box :completed %>
   </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>
