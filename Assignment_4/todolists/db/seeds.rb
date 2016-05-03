@@ -25,3 +25,4 @@ TodoList.all.each do |list|
   list.user = users.sample
   list.save!
 end
+
